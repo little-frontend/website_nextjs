@@ -5,14 +5,20 @@
   "repository": "git@github.com:little-frontend/website_nextjs.git",
   "author": "navelorange1999@gmail.com",
   "license": "MIT",
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
+    "serve": "nodemon server/index.ts",
+    "client": "next dev",
+    "dev": "yarn serve & yarn client",
+    "build:client": "next build",
+    "start:client": "next start",
+    "lint:client": "next lint",
     "commit": "git-cz"
   },
   "dependencies": {
+    "@apollo/client": "^3.11.6",
+    "@apollo/server": "^4.11.0",
+    "graphql": "^16.9.0",
     "next": "^12.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -25,6 +31,8 @@
     "cz-emoji": "^1.3.1",
     "eslint": "8.21.0",
     "eslint-config-next": "12.2.3",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
     "typescript": "4.7.4"
   },
   "config": {
