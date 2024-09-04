@@ -3747,6 +3747,11 @@ tsutils@^3.21.0:
   dependencies:
     tslib "^1.8.1"
 
+ttab@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/ttab/-/ttab-0.9.0.tgz#e14b6a0638b92835aa27d17c3dc634e9d3ab9b06"
+  integrity sha512-9JjR2OyEAcgqialIJ6GkIIssRenncGAOjWBLN5vDBMRJQbPxhkk4RriUmMaEMtGOWJsrgWeO7/mFO5xvcKIg5w==
+
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/type-check/-/type-check-0.4.0.tgz#07b8203bfa7056c0657050e3ccd2c37730bab8f1"

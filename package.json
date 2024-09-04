@@ -5,11 +5,10 @@
   "repository": "git@github.com:little-frontend/website_nextjs.git",
   "author": "navelorange1999@gmail.com",
   "license": "MIT",
-  "type": "module",
   "scripts": {
     "serve": "nodemon server/index.ts",
     "client": "next dev",
-    "dev": "yarn serve & yarn client",
+    "dev": "ttab -w yarn serve && ttab -v yarn client",
     "build:client": "next build",
     "start:client": "next start",
     "lint:client": "next lint",
@@ -33,6 +32,7 @@
     "eslint-config-next": "12.2.3",
     "nodemon": "^3.1.4",
     "ts-node": "^10.9.2",
+    "ttab": "^0.9.0",
     "typescript": "4.7.4"
   },
   "config": {
