@@ -1,0 +1,9 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+      "module": "commonjs",
+    },
+    "include": ["server/typings/**/*.d.ts", "server/**/*.ts", "server/**/*.tsx"],
+    "exclude": ["node_modules"]
+  }
+  
