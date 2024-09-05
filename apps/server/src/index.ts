@@ -7,7 +7,6 @@ import { startStandaloneServer } from '@apollo/server/standalone';
 const typeDefs = `#graphql
   type Repo {
     description: String
-  
   }
 
  
