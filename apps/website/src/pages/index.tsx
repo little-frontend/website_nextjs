@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import { gql } from "@apollo/client";
-import createApolloClient from "../apollo";
+import createApolloClient from "../src/apollo";
 
 
 const Home: NextPage<{
