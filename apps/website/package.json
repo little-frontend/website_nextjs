@@ -3,12 +3,13 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "predev": "yarn codegen",
+    "dev": "dotenvx run -f .env.local -- next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "codegen:watch": "graphql-codegen --watch",
-    "predev": "yarn codegen:watch"
+    "codegen": "yarn wait:server && graphql-codegen",
+    "wait:server": "wait-on tcp:4000"
   },
   "dependencies": {
     "@apollo/client": "^3.11.6",

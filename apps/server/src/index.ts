@@ -38,7 +38,8 @@ const server = new ApolloServer({
   //  2. installs your ApolloServer instance as middleware
   //  3. prepares your app to handle incoming requests
 startStandaloneServer(server, {
-    listen: { port: 4000 },
+    listen: { port: 4000, path: '/graphql' },
+    
   }).then(({url})=> {
     console.log(`🚀  Server ready at: ${url}`);
 }) 
