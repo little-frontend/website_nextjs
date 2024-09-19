@@ -1,14 +1,18 @@
 {
     "$schema": "https://turbo.build/schema.json",
     "globalEnv": ["NPM_TOKEN"],
+    "globalDependencies": [".env"],
     "tasks": {
       "build": {
         "dependsOn": ["^build"],
         "outputs": [".next/**", "!.next/cache/**"]
       },
+
       "website#dev": {
+        "inputs": [".env.local"],
         "dependsOn": ["server#dev"]
       },
+
       "dev": {
         "persistent": true,
         "cache": false

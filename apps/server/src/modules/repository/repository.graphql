@@ -1,0 +1,8 @@
+type Repository {
+    description: String
+}
+
+ 
+type Query {
+    repository: Repository
+}

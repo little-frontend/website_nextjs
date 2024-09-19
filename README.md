@@ -4,7 +4,7 @@ For learning nextjs and seo
 
 ## Quick Start
 ```shell
-yarn
+yarn install
 yarn dev
 
 # server

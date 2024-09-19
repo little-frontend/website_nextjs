@@ -1,4 +1,9 @@
 {
+  "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@tests/*": ["tests/*"],
+  },
   "compilerOptions": {
     "lib": [
       "dom",
@@ -21,10 +26,11 @@
   },
   "include": [
     "next-env.d.ts",
+    "src/**/*.d.ts",
     "**/*.ts",
     "**/*.tsx"
   ],
   "exclude": [
     "node_modules",
-  ]
+  ],
 }
